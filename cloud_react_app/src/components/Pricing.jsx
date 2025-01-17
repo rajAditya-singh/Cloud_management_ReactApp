@@ -1,97 +1,60 @@
-import React from 'react'
+import React from 'react';
+
 import { CheckIcon } from '@heroicons/react/solid';
 
-function Pricing() {
-    return (
-        <div className='w-full mt-24'>
-            <div>
-                <div className='bg-black w-full h-[700px]'>
-                    <div>
-                        <div className=' py-8'>
-                            <h2 className='pt-8 text-gray-300 text-2xl font-semibold text-center'>PRICING</h2>
-                            <h2 className='text-4xl text-center font-bold py-4 text-white'>The right price for your research.</h2>
-                            <p className='text-2xl text-center py- text-gray-300'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id laboriosam, dolores reiciendis asdasd asdasdqwes</p>
-                        </div>
-                        <div className='grid grid-cols-1 sm:grid-cols-2 mx-4 gap-4 sm:mx-16'>
-                            <div className=' flex flex-col items-start px-4 bg-white py-4  w-full mx-auto  
-                            transform border border-slate-300 rounded-xl text-center shadow-xl'>
-                                <div className='bg-indigo-300 w-20 rounded-3xl'><p className='text-sm text-black text-center mx-auto'>STANDARD</p></div>
-                                <div className='flex items-baseline mt-2'>
-                                    <h2 className=' text-black text-4xl font-semibold'>$49</h2>
-                                    <p className=' text-black'>/mo</p>
-                                </div>
+const Pricing = () => {
+  return (
+    <div name='pricing' className='w-full text-white my-24'>
+      <div className='w-full h-[800px] bg-slate-900 absolute mix-blend-overlay'></div>
 
-                                <div>
-                                    <p className='py-8 '>Lorem ipsum dolor sit amet, consectetur adipisicing elit. asdid asdasd.</p>
+      <div className='max-w-[1240px] mx-auto py-12'>
 
-                                    <div className='flex my-8'>
-                                        <CheckIcon className='w-6 text-green-500' />
-                                        <p className='ml-4'>Lorem, ipsum dolor.</p>
-                                    </div>
-                                    <div className='flex my-8'>
-                                        <CheckIcon className='w-6 text-green-500' />
-                                        <p className='ml-4'>Lorem, ipsum dolor.</p>
-                                    </div>
-                                    <div className='flex my-8'>
-                                        <CheckIcon className='w-6 text-green-500' />
-                                        <p className='ml-4'>Lorem, ipsum dolor.</p>
-                                    </div>
-                                    <div className='flex my-8'>
-                                        <CheckIcon className='w-6 text-green-500' />
-                                        <p className='ml-4'>Lorem, ipsum dolor.</p>
-                                    </div>
-                                    <div className='flex my-8'>
-                                        <CheckIcon className='w-6 text-green-500' />
-                                        <p className='ml-4'>Lorem, ipsum dolor.</p>
-                                    </div>
-                                </div>
-                                <div className='w-full text-center '>
-                                <button className='py-3 w-full bg-black px-6 my-4'>Get Started</button>
-                                </div>
-                            </div>
-                            <div className=' flex flex-col items-start px-4 bg-white py-4  w-full mx-auto  
-                            transform border border-slate-300 rounded-xl text-center shadow-xl'>
-                                <div className='bg-indigo-300 w-24 rounded-3xl '><p className='text-sm text-black text-center'>ENTERPRISE</p></div>
-                                <div className='flex items-baseline mt-2'>
-                                    <h2 className=' text-black text-4xl font-semibold'>$49</h2>
-                                    <p className=' text-black'>/mo</p>
-                                </div>
-
-                                <div>
-                                    <p className='py-8 '>Lorem ipsum dolor sit amet, consectetur adipisicing elit. asdid.</p>
-
-                                    <div className='flex my-8'>
-                                        <CheckIcon className='w-6 text-green-500' />
-                                        <p className='ml-4'>Lorem, ipsum dolor.</p>
-                                    </div>
-                                    <div className='flex my-8'>
-                                        <CheckIcon className='w-6 text-green-500' />
-                                        <p className='ml-4'>Lorem, ipsum dolor.</p>
-                                    </div>
-                                    <div className='flex my-8'>
-                                        <CheckIcon className='w-6 text-green-500' />
-                                        <p className='ml-4'>Lorem, ipsum dolor.</p>
-                                    </div>
-                                    <div className='flex my-8'>
-                                        <CheckIcon className='w-6 text-green-500' />
-                                        <p className='ml-4'>Lorem, ipsum dolor.</p>
-                                    </div>
-                                    <div className='flex my-8'>
-                                        <CheckIcon className='w-6 text-green-500' />
-                                        <p className='ml-4'>Lorem, ipsum dolor.</p>
-                                    </div>
-                                </div>
-                                <div className='w-full text-center '>
-                                <button className='py-3 w-full bg-black px-6 my-4'>Get Started</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+        <div className='text-center py-8 text-slate-300'>
+          <h2 className='text-3xl uppercase'>Pricing</h2>
+          <h3 className='text-5xl font-bold text-white py-8'>The right price for your research.</h3>
+          <p className='text-3xl'>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+            laudantium odio ullam inventore aliquid ipsum quasi tenetur velit
+            voluptatum iste.
+          </p>
         </div>
-    )
-}
 
-export default Pricing
+        <div className='grid md:grid-cols-2'>
+
+          <div className='bg-white text-slate-900 m-4 p-8 rounded-xl shadow-2xl relative'>
+            <span className='uppercase px-3 py-1 bg-indigo-200 text-indigo-900 rounded-2xl text-sm'>Standard</span>
+            <div>
+              <p className='text-6xl font-bold py-4 flex'>$49<span className='text-xl text-slate-500 flex flex-col justify-end'>/mo</span></p>
+            </div>
+            <p className='text-2xl py-8 text-slate-500'>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <div className='text-2xl'>
+                <p className='flex py-4'><CheckIcon className='w-8 mr-5 text-green-600'  />Lorem, ipsum dolor.</p>
+                <p className='flex py-4'><CheckIcon className='w-8 mr-5 text-green-600'  />Lorem, ipsum dolor.</p>
+                <p className='flex py-4'><CheckIcon className='w-8 mr-5 text-green-600'  />Lorem, ipsum dolor.</p>
+                <p className='flex py-4'><CheckIcon className='w-8 mr-5 text-green-600'  />Lorem, ipsum dolor.</p>
+                <p className='flex py-4'><CheckIcon className='w-8 mr-5 text-green-600'  />Lorem, ipsum dolor.</p>
+                <button className='w-full py-4 my-4'>Get Started</button>
+            </div>
+          </div>
+          <div className='bg-white text-slate-900 m-4 p-8 rounded-xl shadow-2xl relative'>
+            <span className='uppercase px-3 py-1 bg-indigo-200 text-indigo-900 rounded-2xl text-sm'>Premium</span>
+            <div>
+              <p className='text-6xl font-bold py-4 flex'>$99<span className='text-xl text-slate-500 flex flex-col justify-end'>/mo</span></p>
+            </div>
+            <p className='text-2xl py-8 text-slate-500'>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <div className='text-2xl'>
+                <p className='flex py-4'><CheckIcon className='w-8 mr-5 text-green-600'  />Lorem, ipsum dolor.</p>
+                <p className='flex py-4'><CheckIcon className='w-8 mr-5 text-green-600'  />Lorem, ipsum dolor.</p>
+                <p className='flex py-4'><CheckIcon className='w-8 mr-5 text-green-600'  />Lorem, ipsum dolor.</p>
+                <p className='flex py-4'><CheckIcon className='w-8 mr-5 text-green-600'  />Lorem, ipsum dolor.</p>
+                <p className='flex py-4'><CheckIcon className='w-8 mr-5 text-green-600'  />Lorem, ipsum dolor.</p>
+                <button className='w-full py-4 my-4'>Get Started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Pricing;
